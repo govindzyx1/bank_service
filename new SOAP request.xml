@@ -1,0 +1,9 @@
+<AssignMessage name='##'>
+  <DisplayName>##</DisplayName>
+  <AssignTo createNew='true' transport='http' type='request'>contrivedMessage</AssignTo>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <Set>
+    <Payload contentType='text/xml'>${2:$(cadr (assoc 'soap' edge--message-payload-sample-alist))}</Payload>
+    <Verb>POST</Verb>
+  </Set>
+</AssignMessage>
